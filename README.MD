@@ -26,7 +26,6 @@
 - Include some more Pokémon data - strengths, weaknesses, moves
 - Complex evolution chains (Eevee and the likes)
 - Add favorites
-- Offline mode
 - Router for Pokemon details
 
 
