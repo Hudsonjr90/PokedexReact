@@ -2,18 +2,8 @@ import React from 'react';
 
 class Filters extends React.Component {
 
-    // constructor(props) {
-    //     super(props);
-    //     // console.log("props");
-    //     // console.log(this.props.data);
-    //     // this.state = {
-    //     //     showBook: true,
-    //     //     imgsrc: String
-    //     // }
-    // }
-
     openGithub = () => {
-        window.open("https://github.com/Hudsonjr90/TesteC6Bank");
+        window.open("https://github.com/Hudsonjr90/PokedexReact");  
     }
 
     render() {

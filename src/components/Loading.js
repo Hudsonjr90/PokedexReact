@@ -3,7 +3,7 @@ import React from 'react';
 class Loading extends React.Component {
 
     openGithub = () => {
-        window.open("https://github.com/Hudsonjr90/TesteC6Bank");
+        window.open("https://github.com/Hudsonjr90/PokedexReact");
     }
 
     render() {

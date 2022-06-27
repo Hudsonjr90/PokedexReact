@@ -4,7 +4,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 class Footer extends React.Component {
 
     openGithub = () => {
-        window.open("https://github.com/Hudsonjr90/TesteC6Bank");
+        window.open("https://github.com/Hudsonjr90/PokedexReact");
     }
 
     render() {

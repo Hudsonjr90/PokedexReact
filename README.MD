@@ -14,8 +14,6 @@
 
 ## Snapshots
 
-Demo 
-
 <p align="left"><img width=100% src="./public/screenshots/pokedex-demo.png"></p>
 
 ## Built With
