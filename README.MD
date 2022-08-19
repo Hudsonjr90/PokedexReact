@@ -23,8 +23,7 @@
 - PokéAPI
 
 ## To-do in future
-- Include some more Pokémon data - strengths, weaknesses, moves
-- Complex evolution chains (Eevee and the likes)
+
 - Add favorites
 - Router for Pokemon details
 

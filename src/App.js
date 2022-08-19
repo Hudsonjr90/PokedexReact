@@ -192,6 +192,7 @@ class App extends React.Component {
 
     fetchEvoDetails = async (url) => {
         // debugger
+
         const response = await axios.get(url).catch((err) => console.log("Error:", err));
         
 
@@ -221,6 +222,7 @@ class App extends React.Component {
     fetchEvoImages = async (evoChainArr) => {
 
         // debugger
+
         for (let i = 0; i < evoChainArr.length; i++) {
             const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${evoChainArr[i].species_name}`).catch((err) => console.log("Error:", err));
             response.data.sprites.other.dream_world.front_default ? evoChainArr[i]['image_url'] = response.data.sprites.other.dream_world.front_default : evoChainArr[i]['image_url'] = response.data.sprites.other['official-artwork'].front_default;
@@ -285,8 +287,6 @@ class App extends React.Component {
         this.fetchEvoDetails(response.data.evolution_chain.url);
 
         try {
-            // const response = await axios.get(`https://pokeapi.co/api/v2/pokemon-species/${pokemon_name}`).catch((err) => console.log("Error:", err));
-
             for (let i = 0; i < response.data.flavor_text_entries.length - 1; i++) {
                 if (response.data.flavor_text_entries[i].language.name === "en") {
                     this.state.description = response.data.flavor_text_entries[i].flavor_text;
@@ -312,7 +312,7 @@ class App extends React.Component {
             })
         }
 
-        // console.log("description");
+        
     }
 
     handleChangeRegions = (event) => {
@@ -324,7 +324,6 @@ class App extends React.Component {
 
                 this.setState({
                     valueregion: event.target.value,
-                    // valuetype: "all types",
                     sorttype: "ID",
                     isSearch: false,
                     isFilter: false,
@@ -336,9 +335,7 @@ class App extends React.Component {
                 break;
             }
         }
-
-        // console.log("limit");
-        // console.log(event.target.value);
+        
     }
 
     handleChangeSearch = (event) => {
