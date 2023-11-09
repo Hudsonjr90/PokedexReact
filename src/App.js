@@ -111,7 +111,7 @@ class App extends React.Component {
                 "all types", "grass", "bug", "dark", "dragon", "electric", "fairy", "fighting", "fire", "flying", "ghost", "ground", "ice", "normal", "poison", "psychic", "rock", "steel", "water"
             ],
             sortby: [
-                "ID", "Name"
+                "ID", "Nome"
             ],
 
         }
@@ -308,7 +308,7 @@ class App extends React.Component {
             })
         } catch (e) {
             this.setState({
-                description: "Description not found",
+                description: "Descrição não encontrada",
             })
         }
 
@@ -342,7 +342,7 @@ class App extends React.Component {
 
         // debugger
 
-        event.target.value.length > 0 ? this.setState({ isSearch: true, valuetype: "all types", valuesearch: event.target.value }) : this.setState({ isSearch: false, isFilter: false, valuesearch: event.target.value });
+        event.target.value.length > 0 ? this.setState({ isSearch: true, valuetype: "Todos os tipos", valuesearch: event.target.value }) : this.setState({ isSearch: false, isFilter: false, valuesearch: event.target.value });
 
         let searchArr = [];
 
@@ -386,7 +386,7 @@ class App extends React.Component {
 
         debugger
 
-        if (event.target.value === "all types") {
+        if (event.target.value === "Todos os tipos") {
             const allPoks = this.state.allPokemons;
             if (this.state.sorttype === "Name") {
                 allPoks.sort((a, b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0))
@@ -533,7 +533,7 @@ class App extends React.Component {
                         </div>
                     </div>
                     {this.state.noDataFound && <div className="no__data noselect">
-                        No such Pokémon in this region :/
+                         Não há Pokémon nesta região:/
                     </div>}
                     <Footer />
                 </div>}

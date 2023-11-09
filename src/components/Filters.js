@@ -12,7 +12,7 @@ class Filters extends React.Component {
                 <div className="filter__container noselect">
                     <div className="filter__items">
                         <div>
-                            Region
+                            Local
                         </div>
                         <select value={this.props.valueregion} onChange={this.props.regionsSelect}>
                             {this.props.regions.map((region) => (
@@ -25,7 +25,7 @@ class Filters extends React.Component {
                     </div>
                     <div className="filter__items">
                         <div>
-                            Type
+                            Tipo
                         </div>
                         <select value={this.props.valuetype} onChange={this.props.typesSelect}>
                             {this.props.types.map((type) => (
@@ -38,7 +38,7 @@ class Filters extends React.Component {
                     </div>
                     <div className="filter__items">
                         <div>
-                            Sort by
+                        Ordenar por
                         </div>
                         <select value={this.props.sorttype} onChange={this.props.sortSelect}>
                             {this.props.sortby.map((sort) => (
@@ -51,7 +51,7 @@ class Filters extends React.Component {
                     </div>
                     <div className="filter__items">
                         <label>
-                            Search
+                            Pesquisar
                         </label>
                         <input type="text" value={this.props.valuesearch} onChange={this.props.searchChange} />
                     </div>

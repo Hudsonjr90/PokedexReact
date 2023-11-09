@@ -12,7 +12,7 @@ class Footer extends React.Component {
             <>
                 <div className="app__footer noselect">
                     <div>
-                        Built using PokéAPI, React and Material-UI.
+                    Construído usando PokéAPI, React e Material-UI.
                     </div>
                     <div onClick={this.openGithub} className="github__icon">
                         <GitHubIcon></GitHubIcon>

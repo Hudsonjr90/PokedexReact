@@ -95,14 +95,14 @@ export default function InfoDialog(props) {
                             <div className="info__container__data">
                                 <div className="right__box">
                                     <div>
-                                        <div className="info__container__headings">About</div>
+                                        <div className="info__container__headings">Sobre</div>
                                         <div className="desc">
                                             {props.description}
                                         </div>
                                     </div>
                                     <div className="info__container__data__header">
                                         <div className="info__container__data__abilities">
-                                            <div className="info__container__headings">Abilities</div>
+                                            <div className="info__container__headings">Habilidades</div>
                                             <div className="ability__list__bg">
                                                 <ul className="ability__list">
                                                     {props.abilities.map((ability) =>
@@ -115,7 +115,7 @@ export default function InfoDialog(props) {
                                         </div>
                                     </div>
                                     <div>
-                                        <div className="info__container__headings stats">Base Stats</div>
+                                        <div className="info__container__headings stats">Estatísticas Básicas</div>
                                         <div className="info__container__data__data">
                                             {props.stats.map((stat) =>
                                                 <div key={stat['stat__name']} className="info__container__stat__columns">

@@ -11,7 +11,7 @@ class Loading extends React.Component {
             <>
                 <div className="app__container">
                     <div className="loading__text">
-                        Loading
+                        Carregando...
                     </div>
                     <div className="gif__container">
                         <img src="https://i.gifer.com/VgI.gif" className="loading__gif noselect" alt="loading-gif"></img>
